@@ -1,0 +1,23 @@
+//This program make 2 eyeballs on the screen symmetrically
+//Ms. Baxter, period 6, 9/9/2021
+
+size(800, 600);
+background(250, 230, 45);//soft yellow
+
+int x;//storage location for horizontal value that stores integers
+int y;//storage location for vertical value
+
+x = width/2;//stores the center horizontally in x
+y = height/2;//stores the center vertically in y
+
+fill(255);
+ellipse(x-150, y, 200, 150);//left sclera
+ellipse(x+150, y, 200, 150);//right sclera
+
+fill(#C091DE);//hexidecimal purple
+ellipse(x-150, y, 140, 150);//left iris
+ellipse(x+150, y, 140, 150);//right iris
+
+fill(0);
+ellipse(x-150, y, 50, 50);//left pupil
+ellipse(x+150, y, 50, 50);//right pupil
